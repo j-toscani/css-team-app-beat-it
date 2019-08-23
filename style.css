@@ -33,6 +33,7 @@ header > img {
 }
 header > h1 {
   margin: 10px;
+  font-size: 0.8em;
 }
 
 nav {
@@ -107,6 +108,64 @@ main h2 {
 .order__formelement p {
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.offer-grid {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  grid-template: 30% 70%/1fr;
+  background: #7c8c03;
+}
+
+.my-order-sum {
+  background: #f2f2f2;
+  padding: 10px;
+  -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.my-order-sum > h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.my-suggestions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+article.suggestion {
+  height: 20%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  background: #f2f2f2;
+  color: #365902;
+}
+article.suggestion > img {
+  width: 20%;
+}
+article.suggestion div {
+  width: 70%;
+}
+article.suggestion div > h3 {
+  font-size: 1rem;
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+}
+article.suggestion div > p {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
