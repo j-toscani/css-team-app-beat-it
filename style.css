@@ -35,8 +35,14 @@ header > h1 {
   margin: 10px;
 }
 
-footer {
-  background: yellow;
+nav {
+  background: #365902;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  color: #f2f2f2;
 }
 
 main {
