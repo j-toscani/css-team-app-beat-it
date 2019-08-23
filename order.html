@@ -14,14 +14,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <header>
-          <img href="ressources/defaultPic.png" alt="Log" />
-          <h1 style="font-size: 0.8em">
-            BEaT.it <span>Put your appetite on the Menu!</span>
-          </h1>
-        </header>
-    </h1>
-    <main>Main</main>
+    <header>
+      <img href="ressources/defaultPic.png" alt="Log" />
+      <h1 style="font-size: 0.8em">
+        BEaT.it <span>Put your appetite on the Menu!</span>
+      </h1>
+    </header>
+    <main id="order__main">
+      <h2>Order</h2>
+      <section>
+        <form id="order__form">
+          <div class="order__formelement">
+            <label for="number">persons</label>
+            <input id="number" type="number" min="1" />
+          </div>
+          <div class="order__formelement">
+            <label for="number">price per person</label>
+            <input id="number" type="number" min="1" />
+            <p>€</p>
+          </div>
+          <div class="order__formelement">
+            <label for="number">vegeterian</label>
+            <input id="number" type="number" min="1" />
+            <p>p.</p>
+          </div>
+          <div class="order__formelement">
+            <label for="number">vegan</label>
+            <input id="number" type="number" min="1" />
+            <p>p.</p>
+          </div>
+        </form>
+
+        <!-- Maybe we can use the sum function via js: https://forum.tutorials7.com/1827/sum-numbers-with-html-form-and-js -->
+      </section>
+    </main>
     <footer>
       <nav>
         <a href="order.html">order</a>

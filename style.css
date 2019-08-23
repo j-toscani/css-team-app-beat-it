@@ -28,4 +28,14 @@ main {
   background: white;
 }
 
+/* .order__formelement {
+  & > p {
+    display: inline;
+  }
+}
+ */
+.order__form {
+  display: grid;
+}
+
 /*# sourceMappingURL=style.css.map */
