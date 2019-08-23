@@ -82,6 +82,7 @@ div.suggestion-inner-box {
 div.suggestion-inner-box > h3 {
   font-size: 1rem;
   padding: 0;
+  padding-bottom: 5px;
   margin: 0;
 }
 
