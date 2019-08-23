@@ -15,9 +15,9 @@
   </head>
   <body>
     <header>
-      <img href="ressources/defaultPic.png" alt="Log" />
+      <img src="ressources/restaurant.png" alt="Log" />
       <h1 style="font-size: 0.8em">
-        BEaT.it <span>Put your appetite on the Menu!</span>
+        BEaT.it: <span>Put your appetite on the Menu!</span>
       </h1>
     </header>
     <main id="order__main">
@@ -25,22 +25,22 @@
       <section>
         <form id="order__form">
           <div class="order__formelement">
-            <label for="number">persons</label>
-            <input id="number" type="number" min="1" />
+            <label for="persons">Persons</label>
+            <input id="persons" type="number" min="1" />
           </div>
           <div class="order__formelement">
-            <label for="number">price per person</label>
-            <input id="number" type="number" min="1" />
-            <p>€</p>
+            <label for="price">Price per person</label>
+            <input id="price" type="number" min="0" />
+            <p class="order__unit">€</p>
           </div>
           <div class="order__formelement">
-            <label for="number">vegeterian</label>
-            <input id="number" type="number" min="1" />
-            <p>p.</p>
+            <label for="number">Vegeterian</label>
+            <input id="number" type="number" min="0" />
+            <p class="order__unit">p.</p>
           </div>
           <div class="order__formelement">
-            <label for="number">vegan</label>
-            <input id="number" type="number" min="1" />
+            <label for="number">Vegan</label>
+            <input id="number" type="number" min="0" />
             <p>p.</p>
           </div>
         </form>
@@ -48,12 +48,6 @@
         <!-- Maybe we can use the sum function via js: https://forum.tutorials7.com/1827/sum-numbers-with-html-form-and-js -->
       </section>
     </main>
-    <header>
-      <img src="ressources/restaurant.png" alt="Log" />
-      <h1 style="font-size: 0.8em">
-        BEaT.it: <span>Put your appetite on the Menu!</span>
-      </h1>
-    </header>
     <footer>
       <nav>
         <a href="order.html">order</a>

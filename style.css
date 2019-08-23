@@ -1,18 +1,65 @@
-/* Error: Expected expression.
- *   ,
- * 10|   grid-template: ;
- *   |                  ^
- *   '
- *   partials/_order.scss 10:18  @import
- *   input.scss 4:9              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 10\2502    grid-template: ;\a   \2502                   ^\a   \2575 \a   partials/_order.scss 10:18  @import\a   input.scss 4:9              root stylesheet";
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  grid-template: 60px 1fr 60px/1fr;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  background: #365902;
+  color: #f2f2f2;
+  padding: 5px;
+}
+header > img {
+  height: 100%;
+}
+header > h1 {
+  margin: 10px;
+}
+
+footer {
+  background: yellow;
+}
+
+main {
+  background: #f2f2f2;
+}
+main h2 {
+  text-align: center;
+}
+
+#order__form {
+  padding: 0 1em;
+}
+
+.order__formelement {
+  display: grid;
+  grid-template-columns: 3fr 40px 20px;
+  grid-gap: 1em;
+  margin-bottom: 1em;
+  align-items: center;
+}
+.order__formelement p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

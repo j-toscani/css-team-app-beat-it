@@ -1,11 +1,15 @@
-/* .order__formelement {
-  & > p {
-    display: inline;
-  }
+#order__form {
+  padding: 0 1em;
 }
- */
 
-.order__form {
+.order__formelement {
   display: grid;
-  grid-template: ;
+  grid-template-columns: 3fr 40px 20px;
+  grid-gap: 1em;
+  margin-bottom: 1em;
+  align-items: center;
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
 }
