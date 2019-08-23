@@ -18,7 +18,21 @@ body {
   padding: 0;
 }
 
-header,
+header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  background: $color1;
+  color: $color5;
+  padding: 5px;
+  > img {
+    height: 100%;
+  }
+  > h1 {
+    margin: 10px;
+  }
+}
 footer {
   background: yellow;
 }

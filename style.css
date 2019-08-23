@@ -1,41 +1,18 @@
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Error: Expected expression.
+ *   ,
+ * 10|   grid-template: ;
+ *   |                  ^
+ *   '
+ *   partials/_order.scss 10:18  @import
+ *   input.scss 4:9              root stylesheet */
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a   \2577 \a 10\2502    grid-template: ;\a   \2502                   ^\a   \2575 \a   partials/_order.scss 10:18  @import\a   input.scss 4:9              root stylesheet";
 }
-
-body {
-  display: grid;
-  grid-template: 60px 1fr 60px/1fr;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-}
-
-header,
-footer {
-  background: yellow;
-}
-
-main {
-  background: white;
-}
-
-/* .order__formelement {
-  & > p {
-    display: inline;
-  }
-}
- */
-.order__form {
-  display: grid;
-}
-
-/*# sourceMappingURL=style.css.map */
