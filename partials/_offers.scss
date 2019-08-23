@@ -4,10 +4,20 @@
   width: 100%;
   padding: 10px;
   grid-template: 30% 70% / 1fr;
+  background: $color3;
 }
 
 .my-order-sum {
-  background: gray;
+  background: $color5;
+  padding: 10px;
+  -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  > h3 {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .my-suggestions {
@@ -17,25 +27,31 @@
   padding: 10px;
 }
 
-.suggestion {
+article.suggestion {
   height: 20%;
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   display: flex;
-}
-
-div.suggestion-inner-box {
-  background: whitesmoke;
-  padding: 5px;
-  width: 70%;
-  height: 100%;
-  -moz-box-shadow: 3px 3px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow: 3px 3px 5px 6px #ccc;
-  > h3 {
-    font-size: 1rem;
-    padding: 0;
-    padding-bottom: 5px;
-    margin: 0;
+  justify-content: space-around;
+  -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  background: $color5;
+  color: $color1;
+  > img {
+    width: 20%;
+  }
+  div {
+    width: 70%;
+    > h3 {
+      font-size: 1rem;
+      padding: 0;
+      padding-bottom: 5px;
+      margin: 0;
+    }
+    > p {
+      margin: 0;
+      padding: 0;
+    }
   }
 }
