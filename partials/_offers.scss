@@ -3,15 +3,19 @@
   height: 100%;
   width: 100%;
   padding: 10px;
-  grid-template: 1fr / 40% 60%;
+  grid-template: 40% 60% / 1fr;
 }
 
-.my-offers {
+.my-order-sum {
   background: gray;
 }
 
 .my-suggestions {
   display: flex;
+  flex-direction: column;
   padding: 10px;
   background: blue;
+}
+
+.suggestion {
 }
