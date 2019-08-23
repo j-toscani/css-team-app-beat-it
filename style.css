@@ -35,8 +35,14 @@ header > h1 {
   margin: 10px;
 }
 
-footer {
-  background: yellow;
+nav {
+  background: #365902;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  color: #f2f2f2;
 }
 
 main {
@@ -46,8 +52,30 @@ main h2 {
   text-align: center;
 }
 
+#order__main {
+  overflow: auto;
+}
+
 #order__form {
   padding: 0 1em;
+}
+#order__form #order__comment {
+  width: 100%;
+  height: 100px;
+  margin-top: 1em;
+  text-align: start;
+}
+#order__form textarea {
+  border: #a9bf04 solid 1px;
+  font-size: 0.8em;
+}
+#order__form #order__submit {
+  width: 100%;
+  background: #a9bf04;
+  font-size: 0.8em;
+  padding: 1em 0;
+  margin-top: 1em;
+  border-radius: 8px;
 }
 
 .order__formelement {
@@ -56,6 +84,14 @@ main h2 {
   grid-gap: 1em;
   margin-bottom: 1em;
   align-items: center;
+  border-bottom: #a9bf04 dashed 1px;
+}
+.order__formelement input {
+  border: #a9bf04 solid 1px;
+  height: 24px;
+  text-align: center;
+  font-size: 0.8em;
+  background: none;
 }
 .order__formelement p {
   margin-block-start: 0;

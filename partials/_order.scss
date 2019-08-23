@@ -1,5 +1,30 @@
+#order__main {
+  overflow: auto;
+}
+
 #order__form {
   padding: 0 1em;
+
+  #order__comment {
+    width: 100%;
+    height: 100px;
+    margin-top: 1em;
+    text-align: start;
+  }
+
+  textarea {
+    border: $color2 solid 1px;
+    font-size: 0.8em;
+  }
+
+  #order__submit {
+    width: 100%;
+    background: $color2;
+    font-size: 0.8em;
+    padding: 1em 0;
+    margin-top: 1em;
+    border-radius: 8px;
+  }
 }
 
 .order__formelement {
@@ -8,6 +33,16 @@
   grid-gap: 1em;
   margin-bottom: 1em;
   align-items: center;
+  border-bottom: $color2 dashed 1px;
+
+  input {
+    border: $color2 solid 1px;
+    height: 24px;
+    text-align: center;
+    font-size: 0.8em;
+    background: none;
+  }
+
   p {
     margin-block-start: 0;
     margin-block-end: 0;
