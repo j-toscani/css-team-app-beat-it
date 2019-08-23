@@ -1,0 +1,16 @@
+main {
+  background: $color5;
+}
+div {
+  display: grid;
+  justify-content: row;
+  align-items: center;
+  padding: 7px;
+}
+button {
+  background-color: $color3;
+  display: flex;
+  justify-items: row;
+  text-align: center;
+  font-size: 18px;
+}
