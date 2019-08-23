@@ -25,6 +25,15 @@
     margin-top: 1em;
     border-radius: 8px;
   }
+
+  #order__summary {
+    border: none;
+    color: #888;
+
+    p:nth-last-of-type(2) {
+      text-align: center;
+    }
+  }
 }
 
 .order__formelement {
@@ -33,7 +42,12 @@
   grid-gap: 1em;
   margin-bottom: 1em;
   align-items: center;
-  border-bottom: $color2 dashed 1px;
+  border-bottom: black dashed 1px;
+  padding-bottom: 0.4em;
+
+  &:nth-last-of-type(2) {
+    border-bottom: double 4px;
+  }
 
   input {
     border: $color2 solid 1px;

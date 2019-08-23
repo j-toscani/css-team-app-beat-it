@@ -77,6 +77,13 @@ main h2 {
   margin-top: 1em;
   border-radius: 8px;
 }
+#order__form #order__summary {
+  border: none;
+  color: #888;
+}
+#order__form #order__summary p:nth-last-of-type(2) {
+  text-align: center;
+}
 
 .order__formelement {
   display: grid;
@@ -84,7 +91,11 @@ main h2 {
   grid-gap: 1em;
   margin-bottom: 1em;
   align-items: center;
-  border-bottom: #a9bf04 dashed 1px;
+  border-bottom: black dashed 1px;
+  padding-bottom: 0.4em;
+}
+.order__formelement:nth-last-of-type(2) {
+  border-bottom: double 4px;
 }
 .order__formelement input {
   border: #a9bf04 solid 1px;

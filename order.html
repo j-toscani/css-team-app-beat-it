@@ -20,39 +20,57 @@
         BEaT.it: <span>Put your appetite on the Menu!</span>
       </h1>
     </header>
+    <!-- Main Content area -->
     <main id="order__main">
       <h2>Order</h2>
-      <section>
-        <form id="order__form" action="offers.html">
-          <div class="order__formelement">
-            <label for="order__persons">Persons</label>
-            <input id="order__persons" type="number" min="1" />
-          </div>
-          <div class="order__formelement">
-            <label for="order__price">Price per person</label>
-            <input id="order__price" type="number" min="0" />
-            <p class="order__unit">€</p>
-          </div>
-          <div class="order__formelement">
-            <label for="order__vegeterian">Vegeterian</label>
-            <input id="order__vegeterian" type="number" min="0" />
-            <p class="order__unit">p.</p>
-          </div>
-          <div class="order__formelement">
-            <label for="order__vegan">Vegan</label>
-            <input id="order__vegan" type="number" min="0" />
-            <p>p.</p>
-          </div>
-          <label for="order__comment">What else..</label>
-          <textarea
-            id="order__comment"
-            placeholder="Are there any allergies etc.?"
-          ></textarea>
-          <input id="order__submit" type="submit" value="Order" />
-        </form>
+      <!-- Order Form -->
+      <form id="order__form" action="offers.html">
+        <!-- Persons -->
+        <div class="order__formelement">
+          <label for="order__persons">Persons</label>
+          <input id="order__persons" type="number" min="1" />
+        </div>
 
-        <!-- Maybe we can use the sum function via js: https://forum.tutorials7.com/1827/sum-numbers-with-html-form-and-js -->
-      </section>
+        <!-- Price -->
+        <div class="order__formelement">
+          <label for="order__price">Price per person</label>
+          <input id="order__price" type="number" min="0" />
+          <p class="order__unit">€</p>
+        </div>
+
+        <!-- Vegetarians -->
+        <div class="order__formelement">
+          <label for="order__vegeterian">Vegeterian</label>
+          <input id="order__vegeterian" type="number" min="0" />
+          <p class="order__unit">p.</p>
+        </div>
+
+        <!-- Vegans -->
+        <div class="order__formelement">
+          <label for="order__vegan">Vegan</label>
+          <input id="order__vegan" type="number" min="0" />
+          <p>p.</p>
+        </div>
+
+        <!-- SUM -->
+        <div class="order__formelement" id="order__summary">
+          <p>Summary</p>
+          <p>110</p>
+          <p>€</p>
+        </div>
+
+        <!-- Comment -->
+        <label for="order__comment">What else..</label>
+        <textarea
+          id="order__comment"
+          placeholder="Are there any allergies etc.?"
+        ></textarea>
+
+        <!-- Submit -->
+        <input id="order__submit" type="submit" value="Order" />
+      </form>
+
+      <!-- Maybe we can use the sum function via js: https://forum.tutorials7.com/1827/sum-numbers-with-html-form-and-js -->
     </main>
     <footer>
       <nav>
