@@ -1,0 +1,17 @@
+.offer-grid {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  grid-template: 1fr / 40% 60%;
+}
+
+.my-offers {
+  background: gray;
+}
+
+.my-suggestions {
+  display: flex;
+  padding: 10px;
+  background: blue;
+}
