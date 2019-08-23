@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   padding: 10px;
-  grid-template: 40% 60% / 1fr;
+  grid-template: 30% 70% / 1fr;
 }
 
 .my-order-sum {
@@ -13,9 +13,28 @@
 .my-suggestions {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   padding: 10px;
-  background: blue;
 }
 
 .suggestion {
+  height: 20%;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+}
+
+div.suggestion-inner-box {
+  background: whitesmoke;
+  padding: 5px;
+  width: 70%;
+  height: 100%;
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  > h3 {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
 }
