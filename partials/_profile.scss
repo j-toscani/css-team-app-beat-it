@@ -2,9 +2,9 @@ main {
   background: $color5;
 }
 .profile {
-  display: grid;
-  height: 100%;
-  widows: 100%;
+  background: $color5;
+  height: 150px;
+  width: 100%;
 }
 
 div {
@@ -20,4 +20,16 @@ div {
   text-align: center;
   font-size: 18px;
   justify-content: column;
+}
+#profile-menu {
+  display: grid;
+  grid-template-columns: 30px 1fr 20px;
+  align-items: center;
+}
+.profile-buttons {
+  background: $color2;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-content: end;
 }
