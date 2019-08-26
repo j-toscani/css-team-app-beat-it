@@ -38,21 +38,23 @@ nav {
   background: $color1;
   display: flex;
   height: 100%;
-  align-content: center;
-  align-items: center;
   > a {
     color: $color2;
     flex: 1;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
       background: $color3;
     }
   }
 }
-
 main {
   background: $color5;
   h2 {
     text-align: center;
   }
+}
+.active {
+  color: $color5;
 }
