@@ -70,3 +70,10 @@
     margin-block-end: 0;
   }
 }
+
+.order__extend-input {
+  grid-template-columns: 3fr 60px 20px;
+  input {
+    text-align: center;
+  }
+}
