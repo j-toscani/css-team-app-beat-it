@@ -23,27 +23,27 @@
       <form id="order__form" action="offers.html">
         <!-- Persons -->
         <div class="order__formelement">
-          <label for="order__persons">Persons</label>
+          <label for="order__persons"><p>Persons</p></label>
           <input id="order__persons" type="number" min="1" />
         </div>
 
         <!-- Price -->
         <div class="order__formelement">
-          <label for="order__price">Price per person</label>
+          <label for="order__price"><p>Bet per Person</p></label>
           <input id="order__price" type="number" min="0" />
           <p class="order__unit">€</p>
         </div>
 
         <!-- Vegetarians -->
         <div class="order__formelement">
-          <label for="order__vegeterian">Vegeterian</label>
+          <label for="order__vegeterian"><p>Vegeterians</p></label>
           <input id="order__vegeterian" type="number" min="0" />
           <p class="order__unit">p.</p>
         </div>
 
         <!-- Vegans -->
         <div class="order__formelement">
-          <label for="order__vegan">Vegan</label>
+          <label for="order__vegan"><p>Vegans</p></label>
           <input id="order__vegan" type="number" min="0" />
           <p>p.</p>
         </div>
@@ -56,14 +56,17 @@
         </div>
 
         <!-- Comment -->
-        <label for="order__comment">What else..</label>
+        <label for="order__comment"><p>What else?</p></label>
         <textarea
           id="order__comment"
           placeholder="Are there any allergies etc.?"
         ></textarea>
 
         <!-- Submit -->
-        <input id="order__submit" type="submit" value="Order" />
+        <!-- <input id="order__submit" type="submit" value="Order" /> -->
+        <button id="order__submit" type="submit">
+          <i class="fas fa-paper-plane"></i> Order
+        </button>
       </form>
 
       <!-- Maybe we can use the sum function via js: https://forum.tutorials7.com/1827/sum-numbers-with-html-form-and-js -->

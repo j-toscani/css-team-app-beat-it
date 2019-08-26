@@ -46,9 +46,11 @@ nav {
     justify-content: center;
     text-decoration: none;
     color: $color5;
-    font-size: 1.6em;
-    &:hover {
-      background: $color2;
+    font-size: 1.4em;
+    &:hover,
+    &:active,
+    &:focus {
+      background: $color3;
     }
   }
   .nav-link__active {
@@ -61,5 +63,8 @@ main {
   h2 {
     text-align: center;
     color: $color4;
+  }
+  p {
+    color: #333333;
   }
 }
