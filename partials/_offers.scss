@@ -1,21 +1,13 @@
-.offer-grid {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  grid-template: 40% 60% / 1fr;
-}
-
 .my-order {
   background: $color5;
-  padding: 15px;
+  padding: 10px;
+  margin: 10px;
   -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   > h3 {
     margin: 0;
     padding: 0;
@@ -29,7 +21,6 @@
   padding: 5px;
   margin: 5px;
 }
-
 .order-val {
   text-align: center;
 }
@@ -37,16 +28,19 @@
 .my-suggestions {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   padding: 10px;
+  flex-wrap: wrap;
+}
+.suggestions-extend {
+  overflow: scroll;
+  height: 325px;
 }
 
-article.suggestion {
-  height: 20%;
-  width: 100%;
-  padding: 10px;
+.suggestion {
+  height: 75px;
+  width: 90%;
   display: flex;
-  justify-content: space-around;
+  margin: 20px;
   -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
@@ -55,12 +49,12 @@ article.suggestion {
   > i {
     text-align: center;
     color: $color1;
-    font-size: 3em;
-    margin: auto;
-    padding: auto;
+    font-size: 3.5em;
+    padding: 10px;
   }
-  div {
+  > div {
     width: 70%;
+    margin: auto;
     > h3 {
       font-size: 1rem;
       padding: 0;
