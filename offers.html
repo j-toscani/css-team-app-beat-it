@@ -20,18 +20,47 @@
     </header>
     <main class="offer-grid">
       <!-- This is where the order wil be shown -->
-      <section class="my-order-sum">
-        <h3>Your Order</h3>
-        <hr />
+      <section class="my-order">
+        <div>
+          <h3>Your Order</h3>
+          <hr />
+        </div>
+        <!-- Order Summary -->
+        <article class="my-order-sum">
+          <div class="order__formelement">
+            <div>Persons</div>
+            <div class="order-val">11</div>
+          </div>
+          <div class="order__formelement">
+            <div>Price per person</div>
+            <div class="order-val">10</div>
+            <div>€</div>
+          </div>
+          <div class="order__formelement">
+            <div>Vegetarian</div>
+            <div class="order-val">2</div>
+            <div>p.</div>
+          </div>
+          <div class="order__formelement">
+            <div>Vegan</div>
+            <div class="order-val">2</div>
+            <div>p.</div>
+          </div>
+          <div class="order__formelement" id="order__summary">
+            <p>Summary</p>
+            <p class="order-val">110</p>
+            <p>€</p>
+          </div>
+        </article>
       </section>
       <!-- This is where the suggestions will be shown -->
       <section class="my-suggestions">
         <div>
-          <h2>Choose between:</h2>
+          <h2 style="color:#8c0303">Choose between:</h2>
           <hr />
         </div>
         <article class="suggestion">
-          <img src="ressources/defaultPic.png" alt="1st Choice" />
+          <i class="fa fa-cutlery" aria-hidden="true"></i>
           <div>
             <h3>Name of the dish</h3>
             <p>
@@ -40,7 +69,7 @@
           </div>
         </article>
         <article class="suggestion">
-          <img src="ressources/defaultPic.png" alt="1st Choice" />
+          <i class="fa fa-cutlery" aria-hidden="true"></i>
           <div>
             <h3>Name of the dish</h3>
             <p>
@@ -49,7 +78,7 @@
           </div>
         </article>
         <article class="suggestion">
-          <img src="ressources/defaultPic.png" alt="1st Choice" />
+          <i class="fa fa-cutlery" aria-hidden="true"></i>
           <div>
             <h3>Name of the dish</h3>
             <p>

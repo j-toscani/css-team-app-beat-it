@@ -3,21 +3,35 @@
   height: 100%;
   width: 100%;
   padding: 10px;
-  grid-template: 30% 70% / 1fr;
-  background: $color3;
+  grid-template: 40% 60% / 1fr;
 }
 
-.my-order-sum {
+.my-order {
   background: $color5;
-  padding: 10px;
+  padding: 15px;
   -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   > h3 {
     margin: 0;
     padding: 0;
   }
+}
+
+.my-order-sum {
+  background: $color5;
+  font-size: 0.7em;
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+}
+
+.order-val {
+  text-align: center;
 }
 
 .my-suggestions {
@@ -38,8 +52,12 @@ article.suggestion {
   box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
   background: $color5;
   color: $color1;
-  > img {
-    width: 20%;
+  > i {
+    text-align: center;
+    color: $color1;
+    font-size: 3em;
+    margin: auto;
+    padding: auto;
   }
   div {
     width: 70%;
