@@ -1,64 +1,79 @@
 #order__main {
   overflow: auto;
-}
+  padding-bottom: 30px;
 
-#order__form {
-  padding: 0 1em;
+  #order__form {
+    padding: 0 1em;
 
-  #order__comment {
-    width: 100%;
-    height: 100px;
-    margin-top: 1em;
-    text-align: start;
-  }
+    .order__formelement {
+      display: grid;
+      grid-template-columns: 3fr 40px 20px;
+      grid-gap: 1em;
+      margin-bottom: 1em;
+      align-items: center;
+      border-bottom: $color2 dashed 1px;
+      padding-bottom: 0.4em;
 
-  textarea {
-    border: $color2 solid 1px;
-    font-size: 0.8em;
-  }
+      &:nth-last-of-type(2) {
+        border-bottom: $color2 double 4px;
+      }
 
-  #order__submit {
-    width: 100%;
-    background: $color2;
-    font-size: 0.8em;
-    padding: 1em 0;
-    margin-top: 1em;
-    border-radius: 8px;
-  }
+      input {
+        border: $color2 solid 1px;
+        height: 24px;
+        text-align: center;
+        font-size: 0.8em;
+        background: none;
+      }
 
-  #order__summary {
-    border: none;
-    color: #888;
-
-    p:nth-last-of-type(2) {
-      text-align: center;
+      p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
     }
-  }
-}
 
-.order__formelement {
-  display: grid;
-  grid-template-columns: 3fr 40px 20px;
-  grid-gap: 1em;
-  margin-bottom: 1em;
-  align-items: center;
-  border-bottom: black dashed 1px;
-  padding-bottom: 0.4em;
+    .order__extend-input {
+      grid-template-columns: 3fr 60px 20px;
+      input {
+        text-align: center;
+      }
+    }
 
-  &:nth-last-of-type(2) {
-    border-bottom: double 4px;
-  }
+    #order__comment {
+      width: 100%;
+      height: 100px;
+      text-align: start;
+    }
 
-  input {
-    border: $color2 solid 1px;
-    height: 24px;
-    text-align: center;
-    font-size: 0.8em;
-    background: none;
-  }
+    textarea {
+      border: $color2 solid 1px;
+      font-size: 1em;
+    }
 
-  p {
-    margin-block-start: 0;
-    margin-block-end: 0;
+    #order__submit {
+      width: 100%;
+      background: $color2;
+      padding: 1em 0;
+      margin-top: 1em;
+      border-radius: 8px;
+      color: $color1;
+      font-size: 1em;
+      cursor: pointer;
+      &:hover,
+      &:active,
+      &:focus {
+        background: $color3;
+        color: $color5;
+      }
+    }
+
+    #order__summary {
+      border: none;
+      margin-bottom: 2em;
+
+      p:nth-last-of-type(2) {
+        text-align: center;
+      }
+    }
   }
 }
