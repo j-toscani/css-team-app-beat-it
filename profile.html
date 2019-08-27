@@ -4,14 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
+    <title>BEaT.it - Profile</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome 5 Script with Kit-Code -->
+    <script src="https://kit.fontawesome.com/2de25753dc.js"></script>
   </head>
   <body>
     <header>
@@ -21,40 +17,41 @@
     <main>
       <!---this is the Log in section-->
       <section class="profile">
-        <div>
-          <h2>
-            Profile
-          </h2>
-        </div>
-        <div>
-          <h4>log in:</h4>
-          <button type="button">Start</button>
-        </div>
+        <h2>
+          Profile
+        </h2>
+        <p>Start enjoing the best deals in your local area!</p>
+        <button class="profile-buttons" type="button">log in</button>
       </section>
       <!---This section open following options: Cuopon, Abstract, Settings, News-->
-      <section class="Options">
-        <div>
-          <label for="Coupon">Coupon:</label>
-          <input type="text" name="code" id="Coupon" />
-        </div>
+      <section class="coupon-section">
+        <label for="Coupon">Coupon:</label>
+        <input type="text" name="code" id="Coupon" />
+        <button class="profile-buttons" type="button">submit</button>
       </section>
-      <section class="button">
-        <button type="submit">Abstrtact</button>
-        <button type="submit">Settings</button>
-        <button type="submit">News</button>
+      <section id="profile-menu">
+        <i class="fa fa-history" aria-hidden="true"></i>
+        <p>Abstract</p>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        <i class="fa fa-history" aria-hidden="true"></i>
+        <p>Abstract</p>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        <i class="fa fa-history" aria-hidden="true"></i>
+        <p>Abstract</p>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
       </section>
     </main>
     <footer>
       <nav>
-        <a href="order.html"
-          ><i class="fa fa-thumb-tack" aria-hidden="true"></i
-        ></a>
-        <a href="offers.html"
-          ><i class="fa fa-clock-o" aria-hidden="true"></i
-        ></a>
-        <a href="profile.html" class="active"
-          ><i class="fa fa-user" aria-hidden="true"></i
-        ></a>
+        <a href="order.html">
+          <i class="fas fa-thumbtack"></i>
+        </a>
+        <a href="offers.html">
+          <i class="fas fa-shipping-fast"></i>
+        </a>
+        <a href="profile.html" class="nav-link__active">
+          <i class="fas fa-user"></i>
+        </a>
       </nav>
     </footer>
   </body>

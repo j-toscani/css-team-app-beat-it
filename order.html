@@ -4,16 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
+    <title>BEaT.it - Order</title>
+    <!-- style.css -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome 5 Script with Kit-Code -->
+    <script src="https://kit.fontawesome.com/2de25753dc.js"></script>
   </head>
   <body>
+    <!-- Header with Logo and h1 -->
     <header>
       <img src="ressources/restaurant.png" alt="Log" />
       <h1 style="font-size: 0.8em">
@@ -25,29 +23,35 @@
       <h2>Order</h2>
       <!-- Order Form -->
       <form id="order__form" action="offers.html">
+        <!-- Time -->
+        <div class="order__formelement order__extend-input">
+          <label for="order__time"><p>Delivery Time</p></label>
+          <input id="order__time" type="time" />
+        </div>
+
         <!-- Persons -->
         <div class="order__formelement">
-          <label for="order__persons">Persons</label>
+          <label for="order__persons"><p>Persons</p></label>
           <input id="order__persons" type="number" min="1" />
         </div>
 
         <!-- Price -->
         <div class="order__formelement">
-          <label for="order__price">Price per person</label>
+          <label for="order__price"><p>Bet per Person</p></label>
           <input id="order__price" type="number" min="0" />
           <p class="order__unit">€</p>
         </div>
 
         <!-- Vegetarians -->
         <div class="order__formelement">
-          <label for="order__vegeterian">Vegeterian</label>
+          <label for="order__vegeterian"><p>Vegeterians</p></label>
           <input id="order__vegeterian" type="number" min="0" />
           <p class="order__unit">p.</p>
         </div>
 
         <!-- Vegans -->
         <div class="order__formelement">
-          <label for="order__vegan">Vegan</label>
+          <label for="order__vegan"><p>Vegans</p></label>
           <input id="order__vegan" type="number" min="0" />
           <p>p.</p>
         </div>
@@ -60,27 +64,32 @@
         </div>
 
         <!-- Comment -->
-        <label for="order__comment">What else..</label>
+        <label for="order__comment"><p>What else?</p></label>
         <textarea
           id="order__comment"
           placeholder="Are there any allergies etc.?"
         ></textarea>
 
         <!-- Submit -->
-        <input id="order__submit" type="submit" value="Order" />
+        <button id="order__submit" type="submit">
+          <i class="fas fa-paper-plane"></i> Order
+        </button>
       </form>
 
-      <!-- Maybe we can use the sum function via js: https://forum.tutorials7.com/1827/sum-numbers-with-html-form-and-js -->
+      <!-- Maybe we can use the sum function via js for the form: https://forum.tutorials7.com/1827/sum-numbers-with-html-form-and-js -->
     </main>
+    <!-- Footer with Navigation -->
     <footer>
       <nav>
-        <a href="order.html" class="active"
-          ><i class="fa fa-thumb-tack" aria-hidden="true"></i
-        ></a>
-        <a href="offers.html"
-          ><i class="fa fa-clock-o" aria-hidden="true"></i
-        ></a>
-        <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+        <a href="order.html" class="nav-link__active">
+          <i class="fas fa-thumbtack"></i>
+        </a>
+        <a href="offers.html">
+          <i class="fas fa-shipping-fast"></i>
+        </a>
+        <a href="profile.html">
+          <i class="fas fa-user"></i>
+        </a>
       </nav>
     </footer>
   </body>

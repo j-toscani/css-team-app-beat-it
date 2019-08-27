@@ -38,21 +38,33 @@ nav {
   background: $color1;
   display: flex;
   height: 100%;
+  justify-content: space-around;
   > a {
-    color: $color2;
-    flex: 1;
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-content: center;
-    &:hover {
+    text-decoration: none;
+    color: $color5;
+    font-size: 1.4em;
+    &:hover,
+    &:active,
+    &:focus {
       background: $color3;
     }
+  }
+  .nav-link__active {
+    background: $color2;
   }
 }
 main {
   background: $color5;
   h2 {
     text-align: center;
+    color: $color4;
+  }
+  p {
+    color: #333333;
   }
 }
 .active {
