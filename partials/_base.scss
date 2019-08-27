@@ -57,7 +57,6 @@ nav {
     background: $color2;
   }
 }
-
 main {
   background: $color5;
   h2 {
@@ -67,4 +66,7 @@ main {
   p {
     color: #333333;
   }
+}
+.active {
+  color: $color5;
 }
