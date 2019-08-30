@@ -11,7 +11,38 @@ function multiply(a, b) {
   return budget;
 }
 
+function inputStatusCheck() {
+  if (inputPerson.max === 0 || inputPerson.value == 0) {
+    inputVegan.disabled = true;
+    inputVegan.value = null;
+    inputVegetarian.disabled = true;
+    inputVegetarian.value = null;
+  } else {
+    inputVegan.disabled = false;
+    inputVegetarian.disabled = false;
+  }
+  inputPerson.max = inputPerson.value;
+}
+function setMaxVeganAndVegetarian() {
+  // inputVegan.max = 0;
+  // inputVegetarian.max = 0;
+  // inputVegan.max = inputPerson.max - inputVegetarian.value;
+  // inputVegetarian.max = inputPerson.max - inputVegan.value;
+  if (inputVegan.value > inputVegan.max) {
+    inputVegan.value = inputVegan.max;
+  } else if (inputVegetarian.value > inputVegetarian.max) {
+    inputVegetarian.value = inputVegetarian.max;
+  } else {
+  }
+  inputVegan.max = 0;
+  inputVegetarian.max = 0;
+  inputVegan.max = inputPerson.max - inputVegetarian.value;
+  inputVegetarian.max = inputPerson.max - inputVegan.value;
+  inputStatusCheck();
+}
+
 function calcBudget() {
+  inputStatusCheck();
   const persons = Number(inputPerson.value);
   const budgetPerPerson = Number(inputBudget.value);
   budgetTotal.innerHTML = multiply(persons, budgetPerPerson);
@@ -19,3 +50,5 @@ function calcBudget() {
 
 inputPerson.addEventListener("input", calcBudget);
 inputBudget.addEventListener("input", calcBudget);
+inputVegan.addEventListener("input", setMaxVeganAndVegetarian);
+inputVegetarian.addEventListener("input", setMaxVeganAndVegetarian);
