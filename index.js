@@ -2,6 +2,8 @@
 
 const inputPerson = document.querySelector("#order__persons");
 const inputBudget = document.querySelector("#order__price");
+const inputVegan = document.querySelector("#order__vegan");
+const inputVegetarian = document.querySelector("#order__vegetarian");
 const budgetTotal = document.querySelector("#budget");
 
 function multiply(a, b) {
