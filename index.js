@@ -18,13 +18,13 @@ function calcBudget() {
 }
 
 function blockExtraUser() {
-  if (inputVegan.value > inputPerson.value) {
+  if (Number(inputVegan.value) > Number(inputPerson.value)) {
     alert("the number of vegan users exceeds the number of people");
-  } else if (inputVegetarian.value > inputPerson.value) {
+  } else if (Number(inputVegetarian.value) > Number(inputPerson.value)) {
     alert("the number of vegatarian users exceeds the number of people");
   } else if (
     Number(inputVegetarian.value) + Number(inputVegan.value) >
-    inputPerson.value
+    Number(inputPerson.value)
   ) {
     alert(
       "the number of vegatarian or vegan users exceeds the number of people"
