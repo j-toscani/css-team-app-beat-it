@@ -20,17 +20,17 @@ function inputStatusCheck() {
   } else {
     inputVegan.disabled = false;
     inputVegetarian.disabled = false;
+    inputVegan.max = inputPerson.max;
+    inputVegetarian.max = inputPerson.max;
   }
   inputPerson.max = inputPerson.value;
 }
 function setMaxVeganAndVegetarian() {
-  // inputVegan.max = 0;
-  // inputVegetarian.max = 0;
-  // inputVegan.max = inputPerson.max - inputVegetarian.value;
-  // inputVegetarian.max = inputPerson.max - inputVegan.value;
-  if (inputVegan.value > inputVegan.max) {
+  if (Number(inputVegan.value) > Number(inputVegan.max)) {
     inputVegan.value = inputVegan.max;
-  } else if (inputVegetarian.value > inputVegetarian.max) {
+  } else {
+  }
+  if (Number(inputVegetarian.value) > Number(inputVegetarian.max)) {
     inputVegetarian.value = inputVegetarian.max;
   } else {
   }
@@ -38,7 +38,6 @@ function setMaxVeganAndVegetarian() {
   inputVegetarian.max = 0;
   inputVegan.max = inputPerson.max - inputVegetarian.value;
   inputVegetarian.max = inputPerson.max - inputVegan.value;
-  inputStatusCheck();
 }
 
 function calcBudget() {
