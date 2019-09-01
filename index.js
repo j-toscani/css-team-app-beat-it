@@ -5,8 +5,6 @@ const inputBudget = document.querySelector("#order__price");
 const inputVegan = document.querySelector("#order__vegan");
 const inputVegetarian = document.querySelector("#order__vegetarian");
 const budgetTotal = document.querySelector("#budget");
-const inputVegetarian = document.querySelector("#order__vegetarian");
-const inputVegan = document.querySelector("#order__vegan");
 
 function multiply(a, b) {
   const budget = a * b;
@@ -50,9 +48,9 @@ function calcBudget() {
 }
 
 function blockExtraUser() {
-  if (inputVegan.value > inputPerson.value) {
+  if (Number(inputVegan.value) > Number(inputPerson.value)) {
     alert("the number of vegan users exceeds the number of people");
-  } else if (inputVegetarian.value > inputPerson.value) {
+  } else if (Number(inputVegetarian.value) > Number(inputPerson.value)) {
     alert("the number of vegatarian users exceeds the number of people");
   } else if (
     Number(inputVegetarian.value) + Number(inputVegan.value) >
