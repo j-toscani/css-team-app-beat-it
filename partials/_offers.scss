@@ -1,7 +1,7 @@
 .main-order {
   display: flex;
   overflow: auto;
-  flex-wrap: wrap;
+  flex-direction: column;
   .my-order {
     background: $color5;
     padding: 5px;
