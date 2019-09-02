@@ -10,7 +10,7 @@ function multiply(a, b) {
   const budget = a * b;
   return budget;
 }
-
+// Enable/Disable Vegans and Vegetarians
 function inputStatusCheck() {
   if (inputPerson.max === 0 || inputPerson.value == 0) {
     inputVegan.disabled = true;
@@ -25,6 +25,7 @@ function inputStatusCheck() {
   }
   inputPerson.max = inputPerson.value;
 }
+// Adjust min and max input for Vegans and Vegetarians
 function setMaxVeganAndVegetarian() {
   if (Number(inputVegan.value) > Number(inputVegan.max)) {
     inputVegan.value = inputVegan.max;
@@ -49,13 +50,14 @@ function setMinVeganAndVegetarian() {
   } else {
   }
 }
+//Calculate Budget for Offer
 function calcBudget() {
   inputStatusCheck();
   const persons = Number(inputPerson.value);
   const budgetPerPerson = Number(inputBudget.value);
   budgetTotal.innerHTML = multiply(persons, budgetPerPerson);
 }
-
+//Inform User of Error
 function blockExtraUser() {
   if (Number(inputVegan.value) > Number(inputPerson.value)) {
     alert("the number of vegan users exceeds the number of people");
@@ -71,6 +73,7 @@ function blockExtraUser() {
   } else {
   }
   setMaxVeganAndVegetarian();
+  setMinVeganAndVegetarian();
 }
 
 inputPerson.addEventListener("input", calcBudget);
