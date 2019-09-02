@@ -39,7 +39,16 @@ function setMaxVeganAndVegetarian() {
   inputVegan.max = inputPerson.max - inputVegetarian.value;
   inputVegetarian.max = inputPerson.max - inputVegan.value;
 }
-
+function setMinVeganAndVegetarian() {
+  if (Number(inputVegan.min) > Number(inputVegan.value)) {
+    inputVegan.value = inputVegan.min;
+  } else {
+  }
+  if (Number(inputVegetarian.min) > Number(inputVegetarian.value)) {
+    inputVegetarian.value = inputVegetarian.min;
+  } else {
+  }
+}
 function calcBudget() {
   inputStatusCheck();
   const persons = Number(inputPerson.value);
