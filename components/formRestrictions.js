@@ -76,7 +76,9 @@ function blockExtraUser() {
   setMinVeganAndVegetarian();
 }
 
-inputPerson.addEventListener("input", calcBudget);
-inputBudget.addEventListener("input", calcBudget);
-inputVegan.addEventListener("input", blockExtraUser);
-inputVegetarian.addEventListener("input", blockExtraUser);
+export function addEventListeners() {
+  inputPerson.addEventListener("input", calcBudget);
+  inputBudget.addEventListener("input", calcBudget);
+  inputVegan.addEventListener("input", blockExtraUser);
+  inputVegetarian.addEventListener("input", blockExtraUser);
+}
